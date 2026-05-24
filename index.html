@@ -44,7 +44,7 @@
 
     <!-- ── NAVBAR ──────────────────────────────────────────── -->
   <header>
-      <nav class="navbar" id="navbar" aria-hidden="Main Navigation">
+      <nav class="navbar" id="navbar" aria-label="Main Navigation">
         <a class="navbar-brand" href="index.html" style="text-decoration:none;">
           <span class="brand-mark" aria-label="100 Days logo">100</span>
             <span class="brand-copy">
@@ -242,56 +242,73 @@
 
   <!-- ── FOOTER ─────────────────────────────────────────── -->
   <footer class="footer homepage-footer">
-      <div class="footer-content">
-        <div>
-          <h3>About</h3>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-logo">100 Days · 100 Web Projects</span>
           <p>
-            This repository contains a growing collection of web projects from
-            basic to intermediate using HTML, CSS, and JS.
+            A living archive of frontend experiments, UI systems, and creative
+            builds curated for learners and builders.
           </p>
-          <p>
-            <strong>&copy; 2024 100 Days, 100 Projects</strong> by Dhairya and
-            Contributors.
-          </p>
-        </div>
-        <div>
-          <h3>Connect With Us</h3>
-          <div class="social-links">
+          <div class="social-row">
             <a
               href="https://www.instagram.com/dhairyaa__31/"
               target="_blank"
-              class="social-btn"
+              class="social-icon"
+              aria-label="Instagram"
             >
               <i class="fab fa-instagram"></i>
             </a>
             <a
               href="https://github.com/dhairyagothi/100_days_100_web_project"
               target="_blank"
-              class="social-btn"
+              class="social-icon"
+              aria-label="GitHub"
             >
               <i class="fab fa-github"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/dhairya-gothi-65945b288/"
               target="_blank"
-              class="social-btn"
+              class="social-icon"
+              aria-label="LinkedIn"
             >
               <i class="fab fa-linkedin"></i>
             </a>
           </div>
         </div>
-        <div>
-          <h3>Featured Project</h3>
+        <div class="footer-nav">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#projects">All Projects</a></li>
+            <li><a href="contributors/contributor.html">Contributors</a></li>
+            <li>
+              <a href="https://github.com/dhairyagothi/100_days_100_web_project" target="_blank">
+                GitHub Repository
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/dhairyagothi/100_days_100_web_project/blob/Main/CONTRIBUTING.md"
+                target="_blank"
+              >
+                Contributing Guide
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Featured</h4>
           <p>Generate free, stunning GitHub README profiles in minutes.</p>
-          <a
-            href="https://www.github-readme.tech"
-            target="_blank"
-            class="button featured-btn"
-            style="margin-top: 1rem"
-          >
+          <a href="https://www.github-readme.tech" target="_blank" class="featured-btn">
             <i class="fas fa-magic"></i> Try README Generator
           </a>
         </div>
+      </div>
+      <div class="footer-bottom">
+        <span>
+          &copy; <span id="Current-Year"></span> 100 Days, 100 Projects · Built by Dhairya and contributors.
+        </span>
+        <span>Open Source · MIT License</span>
       </div>
     </footer>
 

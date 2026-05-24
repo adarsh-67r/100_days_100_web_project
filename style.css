@@ -1243,8 +1243,8 @@ color: var(--text-primary);
 
 .footer.homepage-footer {
   background: var(--bg-primary);
-  padding: 6rem 2rem 4rem;
-  border-top: 1px solid var(--glass-border);
+  padding: 0;
+  border-top: 1px solid var(--border);
 }
 
 .footer.homepage-footer .footer-content {
@@ -1290,7 +1290,7 @@ color: var(--text-primary);
   transform: translateY(-5px);
 }
 
-.footer.homepage-footer .featured-btn {
+.footer .featured-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -1303,7 +1303,7 @@ color: var(--text-primary);
   transition: var(--t);
 }
 
-.footer.homepage-footer .featured-btn:hover {
+.footer .featured-btn:hover {
   background: var(--accent-hover);
   transform: translateY(-1px);
 }
@@ -1402,6 +1402,8 @@ color: var(--text-primary);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .footer-bottom span {
